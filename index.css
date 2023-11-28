@@ -1,0 +1,81 @@
+html {
+  background-color: #1c1c1c;
+  margin: auto;
+  padding: 10px;
+  font-family: "Inter", sans-serif;
+  min-width: 340px;
+  max-width: 1080px;
+}
+
+body {
+  background-color: #fff;
+  margin: auto;
+  height: fit-content;
+}
+/*########## HEADER ##########*/
+.color-scheme__container {
+  gap: 1em;
+  max-width: 620px;
+  padding: 1em 0.5em;
+}
+
+.color-scheme__input {
+  border: 0.5px solid #d1d5db;
+  width: 85px;
+  height: 42px;
+}
+
+.color-scheme__selector {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.color-scheme__button {
+  background: var(--white, #fff);
+  border: 1px solid var(--gray-300, #d1d5db);
+  border-radius: 5px;
+  color: var(--gray-700, #374151);
+  width: 250px;
+}
+
+/*########## HERO ##########*/
+.display-container {
+  display: flex;
+}
+
+.display-color {
+  height: 50px;
+  width: 100%;
+}
+
+.display-title {
+  margin: auto;
+  width: 100px;
+  text-align: center;
+}
+
+.display-title:hover {
+  background-color: yellow;
+}
+
+/*########## MISC/UTILITY ##########*/
+.flex {
+  display: flex;
+}
+
+/*########## MEDIA QUERIES ##########*/
+@media (min-width: 768px) {
+  .color-scheme__display {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .display-container {
+    display: block;
+  }
+  .display-color {
+    height: 450px;
+  }
+  .display-title {
+    padding: 1em;
+  }
+}
